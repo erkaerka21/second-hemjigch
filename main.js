@@ -43,19 +43,19 @@ startPauseBttn.addEventListener("click", function () {
         startPauseBttn.innerHTML = "RESUME";
       });
     } */
-    timerInterval = setInterval(miTimer, 1);
+    timerInterval = setInterval(miTimer, 15);
     startPauseBttn.innerHTML = "PAUSE";
     startPauseBttn.addEventListener("click", function () {
       clearInterval(timerInterval);
       startPauseBttn.innerHTML = "RESUME";
       startPauseBttn.addEventListener("click", function () {
-        timerInterval = setInterval(miTimer, 1);
+        timerInterval = setInterval(miTimer, 15);
         startPauseBttn.innerHTML = "PAUSE";
         startPauseBttn.addEventListener("click", function () {
           clearInterval(timerInterval);
           startPauseBttn.innerHTML = "RESUME";
           startPauseBttn.addEventListener("click", function () {
-            timerInterval = setInterval(miTimer, 1);
+            timerInterval = setInterval(miTimer, 15);
             startPauseBttn.innerHTML = "PAUSE";
           });
         });
